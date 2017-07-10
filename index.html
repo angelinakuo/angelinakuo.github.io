@@ -22,6 +22,22 @@ href="https://angelinakuo.github.io">
   <img class="mySlides" src="IMG_9404.JPG" style="width:100%">
   <img class="mySlides" src="IMG_0085.JPG" style="width:100%">
 </section>
+  
+<script>
+// Automatic Slidshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+ 
+function carousel() {
+  var i;
+  var x =
+document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.lenght;; i++) {x[i].style.display = "none";}
+  myIndex++
+  if (myIndex > x.length) {myIndex=1}
+  x[myIndex-1].style.display = "block"; setTimeout(carousel, 3000);}
+  </script>
+  
  
 
 <h1>Angelina Kuo</h1>
