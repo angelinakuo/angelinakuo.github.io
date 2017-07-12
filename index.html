@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet"
-href="https://angelinakuo.github.io">
+
+<head>
+<!-- Set the style of the table -->
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
+
+<style>
+  body{
+    color: inherit;
+    font-family: 'Open Sans', sans-serif;
+  }
+  table, th, td{
+    border: 2px solid #01426a;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+    vertical-align: middle;
+    color: #01426a
+  }
+  th  {
+    background-color: #ece81a
+  }
+  tr:hover {background-color: #ece81a}
+</style>
+</head>
 <body>
-  
-  
+
+
 <!-- Navigation -->
 <nav class="menu-bar menu-black">
   <a href="#about" class="menu-button menu-bar-item">About</a>
@@ -15,38 +35,38 @@ href="https://angelinakuo.github.io">
   <a href="#foodandtravel" class="menu-button menu-bar-item">FoodandTravel</a>
   <a href="#contact" class="menu-button menu-bar-item">Contact</a>
 </nav>
-  
+
 <!-- Slide Show -->
 <section>
-  <img class="mySlides" src="IMG_8669.JPG" style="width:100%">
+  <img src="IMG_8669.JPG" align = "middle" style="width:100%">
 </section>
-  
+
 <!-- Personal Description -->
 <section class="w3-container w3-center w3-content" style="max-width:600px">
   <h2 class="w3-wide">Angelina Kuo</h2>
   <p class="w3-opacity"><i>About Me</i></p>
-  
-  <p class="w3-justify">Hey! My name is Angelina Kuo. I am fifteen years old and I live in Washington state. I have a younger sister that is twelve years old. 
+
+  <p class="w3-justify">Hey! My name is Angelina Kuo. I am fifteen years old and I live in Washington state. I have a younger sister that is twelve years old.
     I'm a foodie at heart and I really enjoy being in the company of my dog friends.:) Also, I love the outdoors and sports.</p>
   <p class="w3-justify">Likes: Being active. Dogs. All things food.</p>
   <p class="w3-justify">Dislikes: Birds (very frightening).
-  
+
   <h3 class="w3-wide">Accessibility for All</h3>
   <p class=w3-opacity"><i>My site is created to help thosed with and without limitations able to interact with my page so that everyone has an equal opportunity with clear and
   bold text, simple lettering, and a simple toolbar.</p>
-                      
+
  <h4 class="w3-wide">Classroom Inspiration</h4>
  <p class="w3-opacity"><i>I would like to thank my Girls Who Code classroom for giving me the inspiration to create this website for all and inspire
  by others features of various fonts, layouts, and picture techniques.</p>
-                   
-  
+
+
   </section>
-  
+
 <script>
 // Automatic Slidshow - change image every 3 seconds
 var myIndex = 0;
 carousel();
- 
+
 function carousel() {
   var i;
   var x =
@@ -56,8 +76,62 @@ document.getElementsByClassName("mySlides");
   if (myIndex > x.length) {myIndex=1}
   x[myIndex-1].style.display = "block"; setTimeout(carousel, 3000);}
   </script>
-  
- 
-  
+
+  <!-- Table starts here-->
+  <div style ="overflow-x:auto;">
+    <table style="width:90%; margin:1em auto">
+
+      <!-- Define the first row of the table -->
+      <tr>
+        <th>Core4 Concept</th>
+        <th>Technical Definition</th>
+        <th>Real-Life Analogy</th>
+        <th>Python Example</th>
+        <th>Scratch Example</th>
+      </tr>
+
+      <!-- Fill in the row for Variables -->
+      <tr>
+      <td><b>Variables</b></td>
+        <td>  </td>
+        <td>  </td>
+        <td>  </td>
+        <td>  </td>
+      </tr>
+
+      <!-- Fill in the row for Loops -->
+      <tr>
+        <td><b>Loops</b></td>
+        <td>  </td>
+        <td>  </td>
+        <td>  </td>
+        <td>  </td>
+      </tr>
+
+      <!-- Fill in the row for Conditionals -->
+      <tr>
+        <td><b>Conditionals</b></td>
+        <td> A conditional is a statement that controls the flow
+         of the code depending on what choice is made. </td>
+        <td> If I study for the test, then I will perform well
+        on the test. Else, if I do not study, I will perform poorly
+        on the test. </td>
+        <td>  </td>
+        <td>  </td>
+      </tr>
+
+      <!-- Fill in the row for Functions -->
+      <tr>
+        <td><b>Functions</b></td>
+        <td>  </td>
+        <td>  </td>
+        <td>  </td>
+        <td>  </td>
+      </tr>
+
+    </table>
+  </div>
+
+
 </body>
 </html>
